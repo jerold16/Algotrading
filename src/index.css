@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.numberwithoutspin::-webkit-inner-spin-button,
+.numberwithoutspin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
