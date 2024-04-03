@@ -63,3 +63,7 @@
 .openout{
 	transition: 0.7s ease-in-out ;
 }
+
+.transition500{
+	transition:0.5s ease-in-out  ;
+}

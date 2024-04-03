@@ -1,10 +1,13 @@
 import React from 'react'
+import Login from './Login'
 
-const Protect = () => {
+const Protect = ({Child}) => {
     let user=sessionStorage.getItem("user")
   return (
     <div>
-
+      {
+        user!=undefined&&user!=null ? <Child/> : <Login/>
+      }
     </div>
   )
 }

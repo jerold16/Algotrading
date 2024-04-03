@@ -9,8 +9,9 @@ const MobileNavbar = (props) => {
     let {active}=props
   return (
     <div className='sticky-top d-lg-none '>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <img className='' src="" alt="logo" />
+        <nav className="navbar navbar-expand-lg px-2 navbar-light bg-light">
+        <div><img className='inline' src={require('../assest/AlgoLogo.jpg')} width={60} alt="logo" />
+        <p className='inline font-serif fw-light mx-2 m-0'>CBSKPBAR</p></div>
       <button onClick={()=>setshow(true)} className="navbar-toggler" 
       type="button" data-toggle="collapse" 
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +20,11 @@ const MobileNavbar = (props) => {
   </nav>
         <Offcanvas className='h-[100vh]' show={show} onHide={()=>setshow(false)}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title> <img className='' src="" alt="logo" /></Offcanvas.Title>
+          <Offcanvas.Title>       
+            <div>
+            <img className='mt-3 inline' src={require('../assest/AlgoLogo.jpg')} width={60} alt="logo" /> <p className='inline font-serif fw-light m-0'>CBSKPBAR</p>
+            </div>
+</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
         <div className={`h-full flex flex-col justify-between`}>
